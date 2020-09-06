@@ -25,7 +25,8 @@ metadata:
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
-  type: ClusterIP  
+  #type: ClusterIP  
+  type: LoadBalancer
   ports:
   - name: "hello-world"
     port: 8080
